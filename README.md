@@ -1,8 +1,4 @@
-# AGENTS.md
-
-This file provides guidance to WARP (warp.dev) when working with code in this repository.
-
-## Project Overview
+# Project Overview
 
 Personal portfolio website for Mohit Sojitra, built with Create React App (CRA). It is a PWA (Progressive Web App) with service worker registration enabled. Deployed on Vercel.
 
