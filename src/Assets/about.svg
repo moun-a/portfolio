@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <defs>
+    <linearGradient id="bgG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A0E1A"/>
+      <stop offset="100%" stop-color="#141824"/>
+    </linearGradient>
+    <filter id="gl">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Monitor -->
+  <rect x="80" y="60" width="240" height="170" rx="10" fill="#12182B" stroke="#C41E3A" stroke-width="2"/>
+  <rect x="90" y="70" width="220" height="140" rx="4" fill="#0A0E1A"/>
+
+  <!-- Code on screen -->
+  <text x="105" y="95" fill="#C41E3A" font-family="monospace" font-size="10">#include &lt;esp32.h&gt;</text>
+  <text x="105" y="112" fill="#C9A84C" font-family="monospace" font-size="10">void setup() {</text>
+  <text x="115" y="129" fill="#888" font-family="monospace" font-size="10">  Serial.begin(115200);</text>
+  <text x="115" y="146" fill="#888" font-family="monospace" font-size="10">  WiFi.begin(ssid);</text>
+  <text x="115" y="163" fill="#C9A84C" font-family="monospace" font-size="10">  LoRa.init();</text>
+  <text x="105" y="180" fill="#C9A84C" font-family="monospace" font-size="10">}</text>
+
+  <!-- Blinking cursor -->
+  <rect x="117" y="184" width="8" height="12" fill="#C41E3A">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Monitor stand -->
+  <rect x="175" y="230" width="50" height="15" rx="2" fill="#1a1a2e"/>
+  <rect x="155" y="245" width="90" height="8" rx="4" fill="#1a1a2e" stroke="#C41E3A" stroke-width="0.5" stroke-opacity="0.3"/>
+
+  <!-- Desk surface -->
+  <rect x="40" y="265" width="320" height="5" rx="2" fill="#1a1a2e" stroke="#C41E3A" stroke-width="0.5" stroke-opacity="0.2"/>
+
+  <!-- Small breadboard -->
+  <rect x="50" y="280" width="80" height="50" rx="4" fill="#12182B" stroke="#C9A84C" stroke-width="1"/>
+  <g stroke="#C9A84C" stroke-width="0.5" opacity="0.5">
+    <line x1="60" y1="290" x2="120" y2="290"/>
+    <line x1="60" y1="298" x2="120" y2="298"/>
+    <line x1="60" y1="306" x2="120" y2="306"/>
+    <line x1="60" y1="314" x2="120" y2="314"/>
+    <line x1="60" y1="322" x2="120" y2="322"/>
+  </g>
+  <!-- Components on breadboard -->
+  <circle cx="75" cy="298" r="3" fill="#C41E3A" filter="url(#gl)">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <rect x="95" y="303" width="12" height="6" rx="1" fill="#C9A84C" opacity="0.7"/>
+
+  <!-- MCU board on desk -->
+  <rect x="155" y="285" width="90" height="55" rx="5" fill="#12182B" stroke="#C41E3A" stroke-width="1.5"/>
+  <rect x="170" y="295" width="60" height="30" rx="3" fill="#0A0E1A" stroke="#C9A84C" stroke-width="0.8"/>
+  <text x="200" y="313" text-anchor="middle" fill="#C41E3A" font-family="monospace" font-size="8" filter="url(#gl)">STM32</text>
+  <!-- USB port -->
+  <rect x="192" y="327" width="16" height="8" rx="2" fill="#333"/>
+
+  <!-- Multimeter -->
+  <rect x="270" y="280" width="60" height="60" rx="6" fill="#12182B" stroke="#C9A84C" stroke-width="1"/>
+  <circle cx="300" cy="305" r="15" fill="none" stroke="#C41E3A" stroke-width="1"/>
+  <line x1="300" y1="305" x2="308" y2="295" stroke="#C41E3A" stroke-width="1.5"/>
+  <text x="300" y="335" text-anchor="middle" fill="#C9A84C" font-family="monospace" font-size="7">3.3V</text>
+
+  <!-- Floating circuit traces decoration -->
+  <g opacity="0.2">
+    <path d="M30 50 H50 V80" stroke="#C41E3A" stroke-width="1" fill="none">
+      <animate attributeName="stroke-dasharray" values="0 80;80 0" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M350 40 H370 V70" stroke="#C9A84C" stroke-width="1" fill="none">
+      <animate attributeName="stroke-dasharray" values="0 80;80 0" dur="3s" begin="1s" repeatCount="indefinite"/>
+    </path>
+    <path d="M30 360 H60 V380 H90" stroke="#C9A84C" stroke-width="1" fill="none">
+      <animate attributeName="stroke-dasharray" values="0 100;100 0" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M310 370 H340 V390 H370" stroke="#C41E3A" stroke-width="1" fill="none">
+      <animate attributeName="stroke-dasharray" values="0 100;100 0" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+</svg>

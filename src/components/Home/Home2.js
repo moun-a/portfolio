@@ -1,8 +1,8 @@
 import React from 'react'
 import {Container, Row, Col} from 'react-bootstrap'
-import myImg from '../../Assets/avatar.svg'
+import myImg from '../../Assets/Avatar.png'
 import Tilt from 'react-parallax-tilt'
-import {AiFillGithub, AiOutlineTwitter, AiFillInstagram} from 'react-icons/ai'
+import {AiFillGithub} from 'react-icons/ai'
 import {FaLinkedinIn} from 'react-icons/fa'
 
 function Home2() {
@@ -15,36 +15,29 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              I'm an engineering student at <b className="purple">INPT</b>,
+              passionate about
+              <b className="purple"> embedded systems</b> and
+              <b className="purple"> IoT</b>.
               <br />
-              <br />I am fluent in classics like
+              <br />I work with microcontrollers like
               <i>
-                <b className="purple"> C++, Javascript and Python. </b>
+                <b className="purple"> STM32, ESP32, and ESP8266 </b>
               </i>
+              using <b className="purple">C</b> and
+              <b className="purple"> Python</b>, and I explore
+              <b className="purple"> FPGA</b> with VHDL.
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
+              My interests revolve around &nbsp;
               <i>
                 <b className="purple">
-                  Web Technologies, Application developement and Products{' '}
-                </b>{' '}
-                and also in areas related to <b className="purple">Clouds.</b>
-              </i>
-              <br />
-              <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {' '}
-                  Modern Javascript Library and Frameworks
+                  intelligent embedded systems, real-time applications, and
+                  wireless communication{' '}
                 </b>
               </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
+              using <b className="purple">LoRa, MQTT, and WiFi</b>, with a
+              focus on <b className="purple">data-oriented embedded design</b>.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -62,7 +55,7 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/MohitSojitra"
+                  href="https://github.com/moun-a"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -73,7 +66,7 @@ function Home2() {
 
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/mohit-sojitra/"
+                  href="https://www.linkedin.com/in/mouna-mouhib-a1789b320"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"

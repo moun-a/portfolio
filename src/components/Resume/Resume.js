@@ -3,14 +3,10 @@ import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
 import Resumecontent from "./ResumeContent";
-import pdf from "../../Assets/Mohit_SDE_Resume.pdf";
+import pdf from "../../Assets/cv_an_impression.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
-import ReactGA from "react-ga";
-
+// Google Analytics removed
 function Resume() {
-  useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  }, []);
   return (
     <Container fluid className="resume-section">
       <Particle />
@@ -23,56 +19,64 @@ function Resume() {
         </Row>
         <Row className="resume">
           <Col md={6} className="resume-left">
-            <h3 className="resume-title">Experience</h3>
+            <h3 className="resume-title">Education</h3>
             <Resumecontent
-              title="Full Stack developer [Shree Themes]"
-              date="April 2021 - present"
+              title="INPT – Cycle Ingénieur (SESNUM)"
+              date="2024 – Present"
               content={[
-                "Learned and experiment with React Native, Aws cloud services like S3, Amplify, App Sync, RDS, GraphQl and DynamoDb.",
-                "Build Full Social media and tinder type Application for LGBTQ+ people.",
+                "Systèmes Embarqués et Services Numériques specialization.",
               ]}
             />
             <Resumecontent
-              title="Full Stack developer [Zujo]"
-              date="June 2020 - April 2021"
+              title="Classes Préparatoires TSI"
+              date="2022 – 2024"
               content={[
-                "Learned and experiment with Aws cloud services like S3, EC2, DynamoDb with Typescript, Nodejs, Graphql, as a backend technology and React, RelayJs, Material UI and Next.js as a frontend technology.",
-                "Build Full Online Learning Plateform which has servel feature like live streaming with real time chat, uploading courses, videos, track watch time etc.",
-              ]}
-            />
-            <h3 className="resume-title">Extracurricular Activities</h3>
-            <Resumecontent
-              title="Technical Lead [Girlscript Surat]"
-              date="March 2020 - present"
-              content={[
-                "As a Part of Community, we arrange lots of event,Like HackerRank contest,ReactJS Live session and lots of other stuff.",
+                "Lycée d'Excellence Mohamed VI, Benguerir.",
               ]}
             />
             <Resumecontent
-              title="Microsoft Learn Student Ambassador"
-              date="Sep 2019 - March 2021"
+              title="Baccalauréat STE"
+              date="2021 – 2022"
               content={[
-                "Under the Microsoft Learn Student Ambassadors programme, I started my cloud journey and learn basics of azure and i hosted several events Like hosting github session, Benifits of open source programme and and its community and much more.",
+                "Sciences et Technologies Électriques – Lycée Technique Prince Moulay Abdellah, Sidi Kacem.",
+              ]}
+            />
+
+            <h3 className="resume-title">Technical Skills</h3>
+            <Resumecontent
+              title=""
+              content={[
+                "Languages: C (embedded), Python (data / ML)",
+                "Microcontrollers: STM32, ESP32, ESP8266, Arduino",
+                "FPGA: Digital logic, VHDL (basics), Quartus",
+                "Protocols: LoRa, WiFi, MQTT, UART, I2C",
+                "Tools: Git, GitHub, VS Code, Linux",
+                "Languages: French (fluent), English (intermediate), Arabic (native)",
               ]}
             />
           </Col>
           <Col md={6} className="resume-right">
-            <h3 className="resume-title">Education</h3>
+            <h3 className="resume-title">Extracurricular Activities</h3>
             <Resumecontent
-              title="Computer Science and Engineering [R.N.G.P.I.T] "
-              date="2017 - 2021"
+              title="Club MSC – Mentoring"
+              date="2026"
               content={[
-                `CGPA: 9.00/10 `,
-                "I was complete my bachelor degree fron R.N.G Patel Institute of Technology.",
+                "Mentoring preparatory class students with their TIPE projects.",
               ]}
             />
-
-            <h3 className="resume-title">Ranks and Achivements</h3>
             <Resumecontent
-              title=""
+              title="INE Alumni Platform – Team Lead"
+              date="2024 – Present"
               content={[
-                `Top 40 of IngineousHunt contest winner and get 16GB pandrive.`,
-                `2nd rank in college elocution competition.`,
+                "Platform connecting students and alumni (directory, opportunities, events).",
+                "Team coordination, task organization and project follow-up.",
+              ]}
+            />
+            <Resumecontent
+              title="ALUDEX – Marraine"
+              date="2024 – Present"
+              content={[
+                "Mentoring and guiding students at Lycée d'Excellence Mohamed VI.",
               ]}
             />
           </Col>

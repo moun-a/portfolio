@@ -11,7 +11,6 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from 'react-icons/ai'
-import {ImBlog} from 'react-icons/im'
 import {CgFileDocument} from 'react-icons/cg'
 
 function NavBar() {
@@ -39,14 +38,14 @@ function NavBar() {
         <Navbar.Brand as={Link} to="/">
           <p
             style={{
-              color: '#be50f4',
+              color: '#C41E3A',
               margin: 'auto',
               fontWeight: '700',
               letterSpacing: '1px',
               fontSize: '28px',
             }}
           >
-            Mohit Sojitra
+            Mouna Mouhib
           </p>
         </Navbar.Brand>
         <Navbar.Toggle
@@ -98,19 +97,10 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
-              <Nav.Link
-                href="https://easy-code.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <ImBlog style={{marginBottom: '2px'}} /> Blogs
-              </Nav.Link>
-            </Nav.Item>
 
             <Nav.Item className="fork-btn">
               <Button
-                href="https://github.com/MohitSojitra/portfolio"
+                href="https://github.com/moun-a"
                 target="_blank"
                 className="fork-btn-inner"
               >

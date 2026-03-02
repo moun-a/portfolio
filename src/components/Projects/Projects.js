@@ -2,19 +2,15 @@ import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
+import senseCareBelt from "../../Assets/Projects/SensCareBelt.jpeg";
+import ecoCold from "../../Assets/Projects/EcoCold.png";
+import cnn from "../../Assets/Projects/CNN1.png";
+import airQuality from "../../Assets/Projects/AirQualityMonitoring.png";
+import rfid from "../../Assets/Projects/RFID.png";
+import campusEvent from "../../Assets/Projects/campusevent.jpeg";
 
-import eCom from "../../Assets/Projects/E-com.png";
-import jsomBlog from "../../Assets/Projects/jsomBlog.png";
-import taskify from "../../Assets/Projects/Taskify.png";
-import aF from "../../Assets/Projects/artisteeF.png";
-import aA from "../../Assets/Projects/artisteeA.png";
-import easyCode from "../../Assets/Projects/easy-code.png";
-import ReactGA from "react-ga";
-
+// Google Analytics removed
 function Projects() {
-  useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  }, []);
   return (
     <Container fluid className="project-section">
       <Particle />
@@ -28,69 +24,61 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={taskify}
+              imgPath={senseCareBelt}
               isBlog={false}
-              title="Taskify"
-              description="Used for increase the productivity and tracks your progress towards the your project or goal. It has a workspace features that means multiple people collobrate in one project. It has a features like create boards , add container in board and add task in container. Board member also add comment in perticular task and assign flag over that. "
-              link="https://github.com/MohitSojitra/taskify"
-              liveLink="https://trallo-clone-mocha.vercel.app/"
+              title="Ceinture Intelligente – SenseCareBelt"
+              description="Health monitoring system built with ESP32 integrating LoRa and WiFi for long and short range communication. Tracks activity and transmits real-time alerts for elderly and mobility-impaired individuals."
+              link="https://github.com/moun-a/SenseCareBelt.git"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={easyCode}
+              imgPath={ecoCold}
               isBlog={false}
-              title="easy-code"
-              description="Easy code is my personal blog website which is build with nextjs. It has great support of the Markdown content. Easy-code is fully responsive blog website which has light and dark mode support."
-              link="https://github.com/MohitSojitra/easy-code"
-              liveLink="https://blog.mohitsojitra.tech/"
+              title="EcoCold – Anomaly Detection"
+              description="Connected refrigerator monitoring system. Collects sensor data (temperature, movement) and uses a Python-based anomaly detection model to predict cold chain failures."
+              link="https://github.com/moun-a/EcoCold.git"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={eCom}
+              imgPath={cnn}
               isBlog={false}
-              title="Jsom Store"
-              description="It is a basic e-commerce site which build in MERN tech stack. It has a features like login, signup as a part of authentication. Apart from that user add product in cart, modify quantity and also remove poduct in cart. It is a basic e-comerce site which build in pure html, css, reactjs and redux. You can watch live app in below button."
-              link="https://github.com/MohitSojitra/e-commerce-store"
-              liveLink="https://e-commerce-fronend.vercel.app/"
+              title="Unknown Faces Detector"
+              description="Remote internship project at INPT. Uses CNN to detect unknown faces entering a private space and alerts the owner via Telegram with a screenshot of the intruder."
+              link="https://github.com/moun-a/Unknown_faces_detector.git"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={jsomBlog}
+              imgPath={rfid}
               isBlog={false}
-              title="Jsom Blog"
-              description="It is a basic blog website which cover all the concept of REACTJS. Main Motivation of this project is understand basic features of the Reactjs like  api fetching, multiple filtering in profile , post and comments. It includes lots' of features which is necessary in any blog site. You can visit Live site by clicking below button."
-              link="https://github.com/MohitSojitra/react-blog-website"
-              liveLink="https://react-blog-website.vercel.app/"
+              title="Contrôle d'Accès RFID Connecté"
+              description="Embedded system using ESP8266 with RFID (MFRC522) for access control. Features authentication, WiFi communication with MySQL via PHP server, and unauthorized access alerts."
+              link="https://github.com/moun-a"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={aF}
+              imgPath={airQuality}
               isBlog={false}
-              title="Artistee Web"
-              description="Aristee is a basic Full Stack websites which contains all the module such as a Admin Panel , Fronend Website and Backend. It inspired by united talent websites which is a use for book Artist for performing live shows
-                            In here i used mainly aws services for handling backend things such as Amazon RDS for database, Amazon SES sercvice for mail perpose and S3 for storing images."
-              link="https://github.com/MohitSojitra/Artistee"
-              liveLink="https://artistee-fronend.vercel.app/"
+              title="Air Quality Monitoring System (TIPE)"
+              description="Embedded system monitoring air quality in gyms using gas and particulate sensors. Displays real-time status (good/moderate/bad) on-screen per norms, with a companion app for remote checking before visiting."
+              link="https://github.com/moun-a"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={aA}
+              imgPath={campusEvent}
               isBlog={false}
-              title="Artistee Admin Pannel"
-              description="Aristee is a basic Full Stack websites which contains all the module such as a Admin Panel , Fronend Website and Backend. It inspired by united talent websites which is a use for book Artist for performing live shows
-                            In here i used mainly aws services for handling backend things such as Amazon RDS for database, Amazon SES sercvice for mail perpose and S3 for storing images."
-              link="https://github.com/MohitSojitra/Artistee"
-              liveLink="https://artistee-admin.vercel.app/"
+              title="Campus Events Hub"
+              description="Academic platform built to enhance development skills. A collaborative web project for managing and discovering campus events."
+              link="https://github.com/moun-a/Campus-Eevents-Hub.git"
             />
           </Col>
         </Row>

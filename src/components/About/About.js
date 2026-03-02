@@ -1,17 +1,13 @@
 import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
-import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
-import laptopImg from "../../Assets/about.png";
+// use SVG placeholder since about.png was missing from Assets
+import laptopImg from "../../Assets/about.svg";
 import Toolstack from "./Toolstack";
-import ReactGA from "react-ga";
-
+// Google Analytics removed
 function About() {
-  useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  }, []);
   return (
     <Container fluid className="about-section">
       <Particle />
@@ -49,7 +45,6 @@ function About() {
         </h1>
         <Toolstack />
 
-        <Github />
       </Container>
     </Container>
   );

@@ -8,29 +8,40 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{textAlign: 'justify'}}>
-            Hi Everyone, I am <span className="purple">Mohit Sojitra </span>
-            from <span className="purple"> Gujarat, India.</span>
-            <br />I am a Full Stack Javascript Developer.
+            Hi Everyone, I am <span className="purple">Mouna Mouhib </span>
+            from <span className="purple"> Morocco.</span>
+            <br />I am an engineering student at
+            <span className="purple"> INPT</span>, specializing in
+            Embedded Systems & IoT. I have hands-on experience with
+            <span className="purple"> ESP32, STM32, and LoRa</span> through
+            applied projects in health, cold chain, and connected systems.
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+            My interests include intelligent embedded systems, wireless
+            communication, and data-oriented embedded design.
+            <br />
+            <br />
+            Apart from engineering, some other activities that I love!
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+              <ImPointRight /> Building IoT prototypes
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writting Tech Blogs
+              <ImPointRight /> Electronics & image processing
             </li>
             <li className="about-activity">
-              <ImPointRight /> Watching Movies and Web Series
+              <ImPointRight /> Arts manuels & Sports
+            </li>
+            <li className="about-activity">
+              <ImPointRight /> Volunteering & mentoring students
             </li>
           </ul>
 
           <p style={{marginBlockEnd: 0, color: 'rgb(155 126 172)'}}>
-            "The world rewards you for value provided, not time spent."{' '}
+            "The best way to predict the future is to create it."{' '}
           </p>
-          <footer className="blockquote-footer">James clear</footer>
+          <footer className="blockquote-footer">Peter Drucker</footer>
         </blockquote>
       </Card.Body>
     </Card>
