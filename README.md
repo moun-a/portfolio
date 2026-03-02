@@ -1,6 +1,6 @@
 # Project Overview
 
-Personal portfolio website for Mohit Sojitra, built with Create React App (CRA). It is a PWA (Progressive Web App) with service worker registration enabled. Deployed on Vercel.
+Personal portfolio website for Mouna Mouhib, built with Create React App (CRA). It is a PWA (Progressive Web App) with service worker registration enabled. Deployed on Vercel.
 
 ## Commands
 
